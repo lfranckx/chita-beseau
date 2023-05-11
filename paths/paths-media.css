@@ -50,6 +50,20 @@
         min-width: 80%;
         font-size: 1.2rem;
     }
+}
 
+/* new fonts */
+@font-face {
+    font-family: 'Outfit';
+    src: url('https://chitabeseau.com/wp-content/uploads/2023/04/Outfit-Regular.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('https://chitabeseau.com/wp-content/uploads/2023/04/Outfit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tan-Kindred';
+    src: url('https://chitabeseau.com/wp-content/uploads/2023/04/TAN-KINDRED.woff') format('woff');
 }
