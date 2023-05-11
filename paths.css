@@ -77,15 +77,6 @@ img {
     transition: all ease .32s;
 }
 
-.btn-lrg.green {
-    background: var(--light-green);
-}
-
-.btn-lrg.blue {
-    background: var(--blue);
-}
-
-
 .btn-lrg:hover {
     background: white;
 }
@@ -108,10 +99,6 @@ img {
 
 .img-wrap {
     display: flex;
-}
-
-.light-green {
-    background: var(--light-green);
 }
 
 .line {
@@ -153,6 +140,30 @@ img {
     color: var(--red);
 }
 
+.blue {
+    background: var(--blue);
+}
+
+.green {
+    background: var(--green);
+}
+
+.light-green {
+    background: var(--light-green);
+}
+
+.red {
+    background: var(--red);
+}
+
+.pink {
+    background: var(--pink);
+}
+
+.purple {
+    background: var(--purple);
+}
+
 .tan-font {
     font-family: "Tan-Kindred";
 }
@@ -164,7 +175,7 @@ img {
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 1.4rem;
+    grid-gap: 2rem;
     width: 100%;
     list-style-type: none;
 }
@@ -177,12 +188,12 @@ img {
 
 .check-list {
     list-style-image: url('https://chitabeseau.com/wp-content/uploads/2023/05/red-check-2.png');
-    list-style-position: inside;
+    max-width: 260px;
+    margin: auto;
 }
 
 /* Intro Header */
 .intro {
-    background: #ff4125;
     padding-top: 5rem;
 }
 
@@ -193,7 +204,6 @@ img {
 
 /* Section 1 */
 .section-1 {
-    background: #fde3e6;
     padding-top: 12rem;
 }
 
@@ -216,7 +226,6 @@ img {
 
 /* Section 2 */
 .section-2 {
-    background: var(--purple);
     padding: 6rem 1rem;
 }
 
@@ -230,7 +239,6 @@ img {
 
 /* Section 3 */
 .section-3  {
-    background: var(--green);
     padding: 6rem 1rem;
 }
 
@@ -254,8 +262,7 @@ img {
 
 /* Section 4 */
 .section-4 {
-    background: var(--purple);
-    padding: 6rem 1rem 5rem;
+    padding: 0rem 1rem 5rem;
     margin-bottom: -5rem;
     z-index: 2;
     position: relative;
@@ -265,13 +272,24 @@ img {
     font-size: 1.4rem;
 }
 
+.section-4 .img-wrap {
+    max-width: 640px;
+    margin-left: auto;
+}
+
+.section_4-img {
+    z-index: 4;
+    position: relative;
+    bottom: 4rem;
+}
+
 /* Section 5 */
 .section-5 {
     background: var(--blue);
 }
 
 .section-5 .grid {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .section-5 img {

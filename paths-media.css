@@ -1,0 +1,55 @@
+@media only screen and (max-width: 980px) {
+    .section-1 .grid, .section-3 .grid {
+        display: block;
+    }
+    .section-1 .text-wrap {
+        margin: auto;
+    }
+
+    .section-3 .left {
+        text-align: center;
+    }
+    .section-3 .btn-wrap {
+        justify-content: center;
+    }
+    .section-3 .right {
+        margin-top: 4rem;
+    }
+
+    .section-5 .grid {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .section-1 h2, .section-5 h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .section-1 h2, .section-5 h2, h2 {
+        font-size: 2.4rem;
+    }
+
+    .section-3 h3, .section-3 .tan-font {
+        font-size: 2rem;
+    }
+
+    .section-5 a {
+        font-size: 1.2rem;
+    }
+
+    .btn-lrg {
+        min-width: 80%;
+        font-size: 1.2rem;
+    }
+
+
+}
