@@ -1,0 +1,148 @@
+<style>
+    /* Utils */ 
+    :root {   --blue: #B5DAEB;   --pink: #FDE3E6;   --purple: #B4A9EA;   --red: #FF4125;   --dark-pink: #EF88BB;   --green: #006C55;   --navy: #233E71;}
+    body, ul, li {   padding: 0;   margin: 0;}
+    * {   font-family: 'Outfit';}
+    h1, h2, h3, h4, h5 {   margin: 0 0 .8rem;   padding: 0;   font-family: 'Outfit-Bold'}
+    h2 {   font-size: 6rem;   font-weight: 900;}
+    h3 {   font-size: 2.2rem;   font-weight: 800;}
+    p {   font-size: 1.6rem;   margin: 0 0 1.2rem;}
+    li {   list-style-type: none;}
+    .page-width {   max-width: 1200px;   margin: auto;}
+    .page-width-wide {   max-width: 2000px;   margin: auto;   padding: 20px;}
+    .absolute {   position: absolute;}
+    .relative {   position: relative;}
+    .flex {   display: flex;}
+    .grid {   display: grid;}
+    .text-center {   text-align: center;}
+    .text-navy {   color: var(--navy);}
+    .text-white {   color: #fff;}
+    .text-green {   color: var(--green);}
+    .text-dark-pink {   color: var(--dark-pink);}
+    .text-blue {   color: var(--blue);}
+    .img-wrap {   max-width: 100%;}
+    .no-mg {   margin: 0;}
+    
+    /* Section 1 */
+    .chita-header {   background: url('https://chitabeseau.com/wp-content/uploads/2023/04/hero-bg.png') no-repeat center center;   -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;   min-height: 800px;   width: 100%;}
+    
+    /* Section 2 */
+    .section.two {   background: var(--blue);}
+    .section.two .grid {   grid-template-columns: .4fr 1.4fr 1.2fr;}
+    .section.two .content-wrap .text-wrap {   z-index: 2;   position: absolute;   width: 100%;   top: 60px;}
+    .section.two .content-wrap .img-wrap {   z-index: 1;   position: relative;   top: 60px;}
+    .rings-img {   left: 0;   top: 600px;   max-width: 200px !important;}
+    .reimagined-stylist {   max-width: 520px !important;   position: relative;   right: 80px;}
+    .abstract-img {   top: 8px;   left: 0;   right: 0;   margin: auto;   width: 100%;   z-index: 1;}
+    
+    /* Section 3 */
+    .section.three .grid {   grid-template-columns: 1fr 1fr;}
+    .section.three .column {   padding: 1.2rem;   min-height: 520px;   display: flex;   flex-direction: column;   align-items: center;   justify-content: center;}
+    .section.three .column .text-wrap {   max-width: 500px;}
+    .section.three .left {   background: var(--red);}
+    .section.three .right {   background: url('https://chitabeseau.com/wp-content/uploads/2023/04/our_plan-bg.png');}
+    
+    /* Section 4 */
+    .section.four {   background: var(--purple);   padding: 1.2rem;}
+    .section.four h2 {   font-family: 'Tan-Kindred';   font-size: 2.8rem;   color: var(--blue);}
+    
+    /* Section 5 */
+    .section.five {   background: url('https://chitabeseau.com/wp-content/uploads/2023/04/dot-pink-bg.png') no-repeat center center;   -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;}
+    .section.five h2 {   font-family: 'Tan-Kindred';   color: var(--red);}
+    .section.five .title-wrap {   padding: 2rem;}
+    .spiral-arrow {   max-width: 240px !important;   position: relative;   top: 40px;}
+    .section.five .location h2 {   font-family: 'Outfit';   color: var(--green);}
+    .section.five .location .flex {   justify-content: space-between;}
+    .section.five .grid {   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));   grid-gap: 1.2rem;}
+    .section.five .card img {   max-width: 100%;   width: 100%;   padding: 1.2rem;}
+    .section.five .card .text-wrap {   padding: .625rem 2.5rem;}
+    .section.five .location {   padding: 1.2rem 0;}
+    .section.five .location h2 {   font-size: 4rem;   font-weight: 900;   font-family: 'Outfit-Bold';   padding-left: 1.2rem;}
+    .section.five .location .text-wrap {   padding: 1.2rem;}
+    
+    /* Section 6 */
+    .section.six {   background-image: linear-gradient(to right,var(--blue) 50%, var(--purple) 50%);   position: relative;}
+    .section.six h2.flex {   width: 100%;   justify-content: space-between;   padding-top: 3rem;   padding-bottom: 1.4rem;}
+    .section.six h2.flex span {   font-family: 'Outfit-Bold';}
+    .arrow-dot {   max-width: 200px !important;}
+    .section.six .grid {   grid-template-columns: 1fr 1fr;}
+    .section.six .column {   display: flex;   flex-direction: column;   justify-content: space-between;}
+    .section.six .column .text-wrap {   padding: 20px;   z-index: 4;}
+    .section.six .left p {   padding-right: 40px;}
+    .section.six .right p {   padding-left: 40px;}
+    .section.six .right {   text-align: right;}
+    .section.six .left .text-wrap {   max-width: 400px;   margin-right: auto;}
+    .section.six .right .text-wrap {   max-width: 400px;   margin-left: auto;}
+    .graphic.img-wrap {   width: 100%;   text-align: center;}
+    .info-graphic {   max-width: 600px !important;   margin: auto;   position: absolute;   bottom: 0;   left: 0;   right: 0;}
+    
+    /* Section 7 */
+    .section.seven {   background: var(--green);}
+    .section.seven .page-width {   padding: 2rem 1.2rem;}
+    .section.seven h2 {   font-family: 'Tan-Kindred';   font-size: 2.8rem;}
+    .section.seven .img-wrap {   max-width: 160px;   margin-left: 1rem;}
+    .section.seven .img-wrap img {   width: 100%;}
+
+    /* Section 8 */.section.eight {   background: url('https://chitabeseau.com/wp-content/uploads/2023/04/reimagine-bg-blue-1.png') no-repeat center center;   -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;   min-height: 400px;   text-align: right;   padding: 2rem 1.2rem;}
+    .section.eight li {   text-align: center;   margin-bottom: 1.2rem;   max-width: 600px;   margin-left: auto;}
+    .section.eight li img {   max-width: 60px;   max-height: 60px;   margin-right: 1.2rem;}
+    .section.eight li p {   margin-top: 8px;   margin-bottom: 0;   text-align: left;}
+    
+    @media only screen and (max-width: 1500px) {   
+        .section.six p {       font-size: 1rem;   }
+        .section.six .left p {       padding-right: 80px;   }
+        .section.six .right p {       padding-left: 80px;   }
+        .info-graphic {       max-width: 500px !important;   }
+    }
+
+    @media only screen and (max-width: 1200px) {   
+        .info-graphic {       max-width: 400px !important;   }
+        .section.six .left p {       font-size: .8rem;       padding-right: 100px;   }
+        .section.six .right p {       font-size: .8rem;       padding-left: 100px;   }
+    }
+
+    @media only screen and (max-width: 1000px) {   
+        .section.two .grid {       grid-template-columns: .4fr 1fr 1.6fr;   }
+        .reimagined-stylist {       max-width: 380px !important;   }
+    }
+
+    @media only screen and (max-width: 750px) {   
+        .section.two .grid {       display: flex;       flex-direction: column;   }
+        .section.two > div > div:nth-child(1) > img {       max-width: 140px;   }
+        .section.two .content-wrap .text-wrap {       z-index: 2;       position: inherit;       width: 100%;   }
+        .section.two > div > div:nth-child(2) {       margin: auto;   }
+        .reimagined-stylist {       position: inherit;   }
+        .section.two > div > div.content-wrap.relative > div.text-wrap > p {       padding: 0 1.2rem;   }
+        .section.two .content-wrap .img-wrap {       margin-top: -300px;       max-width: 420px;       margin: -300px auto 0;   }
+        .section.three > div.grid {       display: flex;       flex-direction: column;   }
+        .section.two > div > div.content-wrap.relative > div.img-wrap > img {       position: inherit;   }
+        .section.five .location .flex {       flex-direction: column;   }
+        .section.five .location .text-wrap {       padding-top: 0;       padding-bottom: 0;   }
+        .page-width-wide {       padding-left: 8px;       padding-right: 8px;   }
+        .section.six > div:nth-child(1) > h2 {       font-size: 2rem;   }
+        .section.six > div:nth-child(1) > h2 > span.text-white {       text-align: right;   }
+        .section.six h3 {       font-size: 1.2rem;   }
+        .section.six .left p {       font-size: .8rem;       padding-right: 0;   }
+        .section.six .left .text-wrap {       padding-left: 0;   }
+        .section.six .right .text-wrap {       padding-right: 0;   }
+        .section.six .right p {       font-size: .8rem;       padding-left: 0;   }
+        .info-graphic {       position: relative;       top: 4px;   }
+        .section.eight > div {       padding-top: 80px;   }
+        .chita-header {       background: url('https://chitabeseau.com/wp-content/uploads/2023/04/hero-bg-mobile.png') no-repeat center center;   }
+        .rings-img {       max-width: 110px !important;       top: 620px;   }
+        .arrow-dot {       max-width: 160px !important;   }
+        main {       right: 10px;   }
+        .section.six .grid {       padding: 1rem;   }
+        .section.six > div:nth-child(1) > h2 {       font-size: 2rem;       padding: 1rem;   }
+        .section.eight > div {       padding-top: 5rem;       padding-right: 1rem;   }
+        .section.five .location {       padding: 1rem;   }
+        section.elementor-section.elementor-top-section.elementor-element.elementor-element-3f6972a.elementor-section-height-min-height.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default.elementor-section-items-middle.mkdf-parallax-row-no.mkdf-content-aligment-left.mkdf-elementor-row-grid-no.mkdf-disabled-bg-image-bellow-no > div > div {       flex-direction: column-reverse;   }
+        .mkdf-wrapper > div.mkdf-wrapper-inner > div > div > div > div > div > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-fcb0dda.elementor-section-stretched.elementor-section-full_width.elementor-section-height-default.elementor-section-height-default.mkdf-parallax-row-no.mkdf-content-aligment-left.mkdf-elementor-row-grid-no.mkdf-disabled-bg-image-bellow-no > div > div > div > div > div > div > div > div > section > div > h2 {       font-size: 4rem;   }
+        .section.three .column .text-wrap p {       z-index: 4;       position: relative;   }
+    }
+    
+    /* new fonts */
+    @font-face {   font-family: 'Outfit';   src: url('https://chitabeseau.com/wp-content/uploads/2023/04/Outfit-Regular.ttf') format('truetype');}
+    @font-face {   font-family: 'Outfit-Bold';   src: url('https://chitabeseau.com/wp-content/uploads/2023/04/Outfit-Bold.ttf') format('truetype');}
+    @font-face {   font-family: 'Tan-Kindred';   src: url('https://chitabeseau.com/wp-content/uploads/2023/04/TAN-KINDRED.woff') format('woff');}
+</style>
